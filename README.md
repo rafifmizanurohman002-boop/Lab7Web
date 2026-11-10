@@ -76,6 +76,10 @@ C:\xampp\php\php.exe -S localhost:8080 -t C:\xampp\htdocs\Lab7Web_PHP
 > mengisi form, menekan tombol, dan mengirim data. Seluruh halaman diuji otomatis:
 > **60 pemeriksaan, semuanya PASS** (rincian di bagian *Hasil Pengujian Otomatis*).
 
+**Tampilan beranda** (dibuka lewat `http://localhost/Lab7Web_PHP/index.php`):
+
+![Beranda](screenshots/beranda.png)
+
 ### Persiapan
 
 1. Buat folder proyek `Lab7Web_PHP` di dalam repository `lab7Web`.
