@@ -1,0 +1,212 @@
+:root {
+  --biru-900: #12315c;
+  --biru-700: #1d4f91;
+  --biru-100: #e8f0fb;
+  --abu-teks: #33415c;
+  --abu-abu: #f5f7fb;
+  --garis: #d9e1ee;
+  --hijau: #157347;
+  --hijau-latar: #e7f6ed;
+  --merah: #b3261e;
+  --merah-latar: #fdecea;
+  --kuning-latar: #fff6e0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  color: var(--abu-teks);
+  background: var(--abu-abu);
+  line-height: 1.6;
+}
+
+.bungkus {
+  width: min(960px, 92vw);
+  margin: 0 auto;
+}
+
+.situs-header {
+  background: linear-gradient(135deg, var(--biru-900), var(--biru-700));
+  color: #fff;
+  padding: 26px 0 18px;
+  margin-bottom: 28px;
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.situs-header h1 {
+  margin: 4px 0 14px;
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+}
+
+.navigasi ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigasi a {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.navigasi a:hover { background: rgba(255, 255, 255, 0.28); }
+
+.navigasi a[aria-current="page"] {
+  background: #fff;
+  color: var(--biru-900);
+  font-weight: 600;
+}
+
+h2 {
+  color: var(--biru-900);
+  border-bottom: 3px solid var(--biru-100);
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+h3 { color: var(--biru-700); }
+
+.kartu {
+  background: #fff;
+  border: 1px solid var(--garis);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(18, 49, 92, 0.06);
+}
+
+.grid-kartu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.grid-kartu a.kartu {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.grid-kartu a.kartu:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(18, 49, 92, 0.12);
+  border-color: var(--biru-700);
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 9px 11px;
+  margin-top: 5px;
+  border: 1px solid var(--garis);
+  border-radius: 8px;
+  font: inherit;
+  background: #fff;
+}
+
+input:focus, select:focus {
+  outline: 2px solid var(--biru-700);
+  outline-offset: 1px;
+}
+
+button,
+.kirim {
+  font: inherit;
+  font-weight: 600;
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--biru-700);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover, .kirim:hover { background: var(--biru-900); }
+
+button.reset {
+  background: #fff;
+  color: var(--biru-700);
+  border: 1px solid var(--garis);
+  margin-left: 8px;
+}
+
+.aksi { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 6px; }
+
+.pesan { padding: 12px 14px; border-radius: 8px; margin: 14px 0; }
+.pesan.sukses { background: var(--hijau-latar); color: var(--hijau); border: 1px solid #bfe6d0; }
+.pesan.gagal  { background: var(--merah-latar); color: var(--merah); border: 1px solid #f3c6c2; }
+.pesan.info   { background: var(--kuning-latar); color: #7a5b00; border: 1px solid #f0dfae; }
+
+.pesan ul { margin: 6px 0 0; padding-left: 20px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+
+th, td {
+  border: 1px solid var(--garis);
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th { background: var(--biru-100); color: var(--biru-900); }
+
+pre.kode {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 14px 16px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 0.88rem;
+}
+
+.catatan {
+  background: var(--biru-100);
+  border-left: 4px solid var(--biru-700);
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.94rem;
+}
+
+.situs-footer {
+  margin-top: 34px;
+  padding: 18px 0 30px;
+  border-top: 1px solid var(--garis);
+  font-size: 0.9rem;
+  color: #5b6b85;
+}
+
+.situs-footer p { margin: 3px 0; }
+
+@media (max-width: 560px) {
+  .navigasi ul { gap: 6px; }
+  .navigasi a { font-size: 0.82rem; padding: 4px 10px; }
+}

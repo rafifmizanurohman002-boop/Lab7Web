@@ -1,0 +1,61 @@
+Total: 60 pemeriksaan — 60 PASS, 0 FAIL
+PASS | HTTP 200 index.php | status=200
+PASS | tanpa error PHP di index.php
+PASS | beranda judul
+PASS | HTTP 200 latihan1.php | status=200
+PASS | tanpa error PHP di latihan1.php
+PASS | latihan1 output PHP
+PASS | latihan1 waktu server
+PASS | latihan1 kode PHP tidak bocor
+PASS | HTTP 200 latihan2.php | status=200
+PASS | tanpa error PHP di latihan2.php
+PASS | latihan2 nilai akhir default 84.90
+PASS | latihan2 ubah nilai → nilai akhir 89.80
+PASS | latihan2 predikat A
+PASS | latihan2 rata-rata 90.00 (eksperimen 1)
+PASS | latihan2 input non-angka ditolak
+PASS | HTTP 200 latihan3.php | status=200
+PASS | tanpa error PHP di latihan3.php
+PASS | latihan3 7 daftar <li>
+PASS | latihan3 foreach bekerja
+PASS | HTTP 200 latihan4.php | status=200
+PASS | tanpa error PHP di latihan4.php
+PASS | latihan4 diskon 10% → Rp135.000
+PASS | latihan4 luas 8x4 = 32
+PASS | latihan4 kelulusan LULUS
+PASS | latihan4 formatRupiah eksperimen 3
+PASS | latihan4 diskon 25% → Rp187.500
+PASS | HTTP 200 latihan5.php | status=200
+PASS | tanpa error PHP di latihan5.php
+PASS | latihan5 URL berisi ?kata=a | http://127.0.0.1:8095/latihan5.php?kata=a
+PASS | latihan5 kata kunci tampil
+PASS | latihan5 hasil pencarian dari array
+PASS | latihan5 hasil ada Rafif
+PASS | latihan5 tanpa kecocokan
+PASS | HTTP 200 latihan6.php | status=200
+PASS | tanpa error PHP di latihan6.php
+PASS | latihan6 kosong → error
+PASS | latihan6 POST sukses
+PASS | latihan6 tag HTML tidak dieksekusi
+PASS | latihan6 tag tampil sebagai teks
+PASS | latihan6 data valid
+PASS | HTTP 200 latihan7.php | status=200
+PASS | tanpa error PHP di latihan7.php
+PASS | latihan7 subtotal Rp900.000
+PASS | latihan7 harga non-numerik ditolak
+PASS | HTTP 200 miniproject.php | status=200
+PASS | tanpa error PHP di miniproject.php
+PASS | MP error nama wajib
+PASS | MP error NIM 9 digit angka
+PASS | MP error prodi wajib
+PASS | MP error email
+PASS | MP error semester
+PASS | MP NIM tidak 9 digit ditolak
+PASS | MP semester kosong ditolak
+PASS | MP email salah ditolak
+PASS | MP valid → ringkasan
+PASS | MP NIM tampil
+PASS | MP semester 5
+PASS | MP reset mengosongkan isian (sisi klien) | nama="" email=""
+PASS | MP reset tidak memproses ulang di server
+PASS | tanpa error JS di seluruh halaman
